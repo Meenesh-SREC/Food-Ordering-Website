@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Welcome to Our Food Ordering Website!</h2>
+    <p>Explore our delicious menu and place your order now!</p>
+
+    <h3>Menu</h3>
+    <ul>
+        <li>Paneer Pav Bhaji - ₹250 (Quantity: Moderate)</li>
+        <li>Butter Chicken Masala - ₹350 (Quantity: Rich)</li>
+        <li>Butter Naan - ₹50 (Quantity: Light)</li>
+        <li>Paneer Kulcha - ₹120 (Quantity: Moderate)</li>
+    </ul>
+
+    <h3>Place Your Order</h3>
+    <form>
+        <label for="dish">Select Dish:</label>
+        <select id="dish" name="dish">
+            <option value="paneer_pav_bhaji">Paneer Pav Bhaji</option>
+            <option value="butter_chicken_masala">Butter Chicken Masala</option>
+            <option value="butter_naan">Butter Naan</option>
+            <option value="paneer_kulcha">Paneer Kulcha</option>
+        </select>
+
+        <label for="quantity">Enter Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required>
+
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="address">Delivery Address:</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+
+        <button type="submit">Place Order</button>
+    </form>
+</body>
+</html>
